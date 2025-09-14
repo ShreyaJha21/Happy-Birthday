@@ -1,0 +1,76 @@
+body {
+    background-image: url('assert/bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "poppins";
+    font-size: 0px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 90px;
+    letter-spacing: 0px;
+    padding-top: 0px;
+}
+.wave-container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.wave-text span  {
+    display: inline-block;
+    font-size: 50px;
+    animation: wave 2s ease-in-out infinite;
+    font-size: 50px;
+    margin: 0 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #9CA4FF, #BC42FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.wave-text {
+  text-shadow: 2px 2px 10px rgba(68, 0, 77, 0.1);
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.wish {
+    position: absolute;
+    top: 13%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+.wish-text span {
+    display: inline-block;
+    font-size: 20px; /* Adjust size as needed */
+    font-weight: lighter;
+    font-family: "poppins";
+    background: #7900a5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 5px;
+}
+
